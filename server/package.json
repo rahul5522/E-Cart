@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "data:import": "node dataSeeder",
     "data:destroy": "node dataSeeder -d",
-    "build": "webpack --config webpack.config.js"
+    
   },
   "author": "",
   "license": "ISC",
