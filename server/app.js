@@ -31,10 +31,10 @@ app.use('/api/upload', uploadRoutes);
 
 const __dirname = path.resolve();
 
-// console.log(__dirname);
+console.log(__dirname);
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
-// console.log(__dirname);
+console.log(process.env.NODE_ENV);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/../client/build')));
